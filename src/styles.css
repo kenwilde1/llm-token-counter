@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+html {
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    margin: 0 10vw;
+    padding: 2rem;
+    background: #f8f8f8;
+    color: #333;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    resize: none;
+    padding: 1rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+    overflow: auto;
+    margin-bottom: .5rem;
+    font-family: 'DM Sans', sans-serif;
+    border: 2px solid #111;
+    border-radius: 8px;
+    outline-color: black;
+}
+
+.title {
+    font-size: 3rem;
+    color: black;
+}
+
+.token-display {
+    width: 100%;
+    height: 200px;
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #eee;
+    color: #666;
+    border: 1px solid #ccc;
+    line-height: 2;
+    white-space: pre-wrap;
+    border: 2px solid #111;
+    border-radius: 8px;
+}
+
+button {
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    background: #ffc3be;
+    font-family: 'DM Sans', sans-serif;
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    height: 48px;
+    border-radius: 8px;
+    width: 92.75px;
+    background-color: black;
+    z-index: -1;
+    transition: transform 0.2s ease-out;
+    transform: translate(2px, 2px);
+}
+
+button:hover::after {
+    transform: translate(0, 0);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.github-logo {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.github-logo:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+}
