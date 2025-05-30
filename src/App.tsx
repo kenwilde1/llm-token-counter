@@ -1,8 +1,8 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import { useClearShortcut } from './hooks/useClearShortcut';
 import tokenizer from 'gpt-tokenizer';
 
-console.log(tokenizer);
+import githubLogo from '../assets/github.svg';
 
 const PASTEL_COLOURS = [
     "rgba(107,64,216,.3)",
@@ -31,7 +31,7 @@ export default function App() {
             <div className="header">
                 <h1 className="title">LLM Token Counter</h1>
                 <a href="https://github.com/kenwilde1" target="_blank" rel="noopener noreferrer">
-                    <img src="/assets/github.svg" alt="GitHub Logo" className="github-logo" />
+                    <img src={githubLogo} alt="GitHub Logo" className="github-logo" />
                 </a>
             </div>
             <textarea
