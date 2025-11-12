@@ -2,7 +2,7 @@
   "name": "llm-token-counter",
   "type": "module",
   "private": true,
-  "script": {
+  "scripts": {
     "dev": "bunx vite",
     "build": "bunx vite build"
   },

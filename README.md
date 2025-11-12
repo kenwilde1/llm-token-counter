@@ -1,7 +1,7 @@
 <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
     <div>
         <img
-            src="./assets/logo.png"
+            src="/src/assets/logo.png"
             alt="LLM Token Counter Logo"
             width="32"
             height="32"
